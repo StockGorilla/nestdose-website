@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Nestdose</title>
+<meta name="description" content="Nestdose has no backend. Your medications and doses live in your own iCloud private database. We don't see them." />
+<link rel="stylesheet" href="/style.css" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+<nav class="nav">
+    <a href="/" class="brand">nest<span>dose</span></a>
+    <ul>
+        <li><a href="/support/">Support</a></li>
+        <li><a href="/privacy/">Privacy</a></li>
+    </ul>
+</nav>
+
+<main class="wrap legal">
+
+<h1>Privacy policy</h1>
+<p class="meta">Effective 31 October 2026. Last updated 31 October 2026.</p>
+
+<p>This policy describes what Nestdose does and does not collect, and what we do with the little bit we see. It mirrors our App Store privacy label exactly — no fine-print surprises.</p>
+
+<h2>What we don't collect</h2>
+<p>Nestdose has <strong>no backend server</strong>. The developer (StockGorilla LLC) does not see or store:</p>
+<ul>
+    <li>The names, strengths, forms, or dosing schedules of any medication you record</li>
+    <li>When you took, skipped, or missed a dose</li>
+    <li>Your appointment notes, questions for your doctor, or medical card information</li>
+    <li>The names, phone numbers, or email addresses of family members you add to your circle</li>
+    <li>Anything you type into the app</li>
+    <li>Your location, contacts, photos, calendar, or health data from HealthKit</li>
+</ul>
+
+<h2>Where your data actually lives</h2>
+<p>All of the content above is stored in <strong>your own iCloud private database</strong> via Apple's CloudKit framework. We — the developer — do not have access to your iCloud. We have never seen your medications and we have no way to.</p>
+<p>When you share your schedule with a family member, we use Apple's CKShare system. The share flows directly between your iCloud and theirs through Apple's infrastructure. We are not in that path.</p>
+
+<h2>What we do collect</h2>
+<p>Nestdose transmits a small amount of anonymous usage data to <strong>TelemetryDeck</strong>, a privacy-focused analytics provider based in Austria. For each tracked event we transmit:</p>
+<ul>
+    <li>The event name — hard-coded strings like <em>"a dose was logged"</em> or <em>"the app launched"</em>. Never your medication names, never any text you entered.</li>
+    <li>A SHA-256 hash of a device identifier. The raw identifier is not transmitted. The hash is used solely to count unique devices across sessions; it cannot be reversed to re-identify you.</li>
+    <li>Your app version, iOS version, and country code.</li>
+</ul>
+<p>We use this data for one purpose: to understand roughly how many people use Nestdose and which features are getting used. It is never combined with any other data source, never sold, never shared with advertisers, and never used to track you across other apps or websites.</p>
+
+<h2>Third parties</h2>
+<p>Nestdose integrates with these Apple-provided services, which are governed by <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>:</p>
+<ul>
+    <li>iCloud / CloudKit — for storing your data in your own iCloud account</li>
+    <li>Apple Push Notification service — for delivering reminders</li>
+    <li>StoreKit — for subscription purchases, if you choose the Family plan</li>
+    <li>HealthKit — only for reading, if you grant permission; we never write to it</li>
+</ul>
+<p>Nestdose integrates with one third-party service outside of Apple:</p>
+<ul>
+    <li>TelemetryDeck — anonymous event counts, as described above</li>
+</ul>
+<p>That is the complete list. There are no advertising SDKs, no marketing attribution SDKs, no social-login providers, no third-party crash reporters, and no "data brokers" of any kind.</p>
+
+<h2>How to delete your data</h2>
+<p>Because Nestdose has no server and we hold nothing about you, deleting your data is entirely in your hands:</p>
+<ul>
+    <li><strong>Delete the app:</strong> remove Nestdose from your iPhone, iPad, and Apple Watch.</li>
+    <li><strong>Purge the CloudKit container:</strong> on your iPhone, Settings → [your name] → iCloud → Manage Account Storage → Nestdose → Delete Data. This removes every medication, dose, schedule, and shared circle from your iCloud.</li>
+</ul>
+<p>Once those two steps are complete, no data about you remains anywhere accessible to us or Apple.</p>
+
+<h2>Children</h2>
+<p>Nestdose is intended for adults managing medications for themselves or for an adult family member they help. We do not knowingly collect any information from children under 13.</p>
+<p>Parents who use Nestdose to manage medications for a child under 13 do so entirely within their own iCloud private database. The medication record is the parent's content; the child is the subject, not the user.</p>
+
+<h2>Your rights (regardless of jurisdiction)</h2>
+<p>Because Nestdose does not collect personal information about you, most data-protection rights (access, portability, correction, deletion) are satisfied by the steps in "How to delete your data" above — you already have full control. For the anonymous TelemetryDeck analytics, we have no way to tie a specific event to a specific person, so there is no personal record to disclose, correct, or delete.</p>
+<p>If you are in the European Union, the United Kingdom, California, or any other jurisdiction with a specific data-protection law, you can email us at <a href="mailto:adhikaribipin@gmail.com">adhikaribipin@gmail.com</a> and we will respond within 30 days.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we change this policy, we will update the "Last updated" date at the top of the page and, if the change is material (for example, introducing a new third-party service), we will note it clearly on the Nestdose website for 60 days.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions: <a href="mailto:adhikaribipin@gmail.com">adhikaribipin@gmail.com</a><br>
+Developer: StockGorilla LLC</p>
+
+</main>
+
+<footer class="footer">
+    <div class="inner">
+        <div>© 2026 StockGorilla LLC</div>
+        <ul>
+            <li><a href="/support/">Support</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/terms/">Terms</a></li>
+            <li><a href="mailto:adhikaribipin@gmail.com">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+# Netlify build config.
+# No build step — just static files served from the repo root.
+
+[build]
+    publish = "."
+    command = ""
+
+# Pretty URLs for /privacy and /support without the trailing /index.html.
+# Netlify already serves /privacy/index.html for /privacy/, so this just
+# normalises the no-slash form.
+[[redirects]]
+    from = "/privacy"
+    to = "/privacy/"
+    status = 301
+
+[[redirects]]
+    from = "/support"
+    to = "/support/"
+    status = 301
+
+[[redirects]]
+    from = "/terms"
+    to = "/terms/"
+    status = 301
+
+# Hard 404 → the custom 404 page (Netlify picks it up automatically but
+# naming it explicitly here is clearer).
+[[redirects]]
+    from = "/*"
+    to = "/404.html"
+    status = 404
+
+[[headers]]
+    for = "/*"
+    [headers.values]
+        X-Frame-Options = "DENY"
+        X-Content-Type-Options = "nosniff"
+        Referrer-Policy = "strict-origin-when-cross-origin"
+        Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+        Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
