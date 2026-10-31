@@ -6,16 +6,23 @@
 <title>Nestdose — Family medication reminders</title>
 <meta name="description" content="Simple medication reminders for the person taking them, shared with the family who help. Free, always, for the patient." />
 <link rel="stylesheet" href="/style.css" />
-<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" />
+<link rel="icon" href="/icon-128.png" sizes="128x128" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <meta property="og:title" content="Nestdose — Family medication reminders" />
 <meta property="og:description" content="Simple reminders. Shared with the family who help. Free, always, for the patient." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://nestdose.com" />
+<meta property="og:image" content="https://nestdose.com/icon-1024.png" />
+<meta name="theme-color" content="#157D70" />
 </head>
 <body>
 
 <nav class="nav">
-    <a href="/" class="brand">nest<span>dose</span></a>
+    <a href="/" class="brand">
+        <img src="/icon-128.png" alt="" class="brand-icon" />
+        <span class="brand-name">nest<em>dose</em></span>
+    </a>
     <ul>
         <li><a href="/support/">Support</a></li>
         <li><a href="/privacy/">Privacy</a></li>
@@ -24,19 +31,61 @@
 
 <header class="hero">
     <div class="hero-inner">
-        <h1>Reminders she<br>can rely on.</h1>
-        <p class="tag">Shared with the family who help. Free, always, for the person taking the medications.</p>
-        <div class="cta-row">
-            <a href="https://apps.apple.com/app/id6810688107" class="cta">Get it on the App Store</a>
-            <a href="#how" class="cta outline">See how it works</a>
+        <div class="hero-copy">
+            <h1>Reminders she<br>can rely on.</h1>
+            <p class="tag">Shared with the family who help. Free, always, for the person taking the medications.</p>
+            <div class="cta-row">
+                <a href="https://apps.apple.com/app/id6810688107" class="cta">Get it on the App Store</a>
+                <a href="#gallery" class="cta outline">See how it works</a>
+            </div>
+        </div>
+        <div class="hero-device" aria-hidden="true">
+            <img src="/screenshots/today.png" alt="" loading="eager" />
         </div>
     </div>
 </header>
 
-<section id="how">
+<section id="gallery" class="gallery">
     <div class="inner">
-        <h2>Built for the two people who matter.</h2>
-        <p class="lede">Nestdose is a quiet, honest medication reminder. One tap says "taken." Family can see what was taken, log one when they're there, and get a notification only when it matters.</p>
+        <h2>What it looks like.</h2>
+        <p class="lede">Each screen is tuned for one audience and one moment — not stuffed with everything the app can do.</p>
+        <div class="shots">
+            <figure>
+                <img src="/screenshots/today.png" alt="Today screen: Margaret's five doses for the day with a progress ring and timeline." loading="lazy" />
+                <figcaption>
+                    <strong>The patient's day.</strong>
+                    Five doses, one glance, next one counting down.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/screenshots/late-dose.png" alt="A late dose takes over the Today screen with one thumb-sized button." loading="lazy" />
+                <figcaption>
+                    <strong>When a dose slips.</strong>
+                    One button. Thumb-sized. The late dose owns the screen.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/screenshots/circle.png" alt="Circle screen listing Margaret, Dan, and Priya with their roles." loading="lazy" />
+                <figcaption>
+                    <strong>Care shared, not surrendered.</strong>
+                    She owns the circle. Helpers propose; she approves.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/screenshots/caregiver.png" alt="Caregiver view of Margaret's day showing a late dose and a Nudge button." loading="lazy" />
+                <figcaption>
+                    <strong>Nudge her. Never override her.</strong>
+                    No Skip button in a helper's app. Every dose is stamped with his name.
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="plans">
+    <div class="inner">
+        <h2>Built for two people.</h2>
+        <p class="lede">The person taking the medication uses Nestdose for free, always. The family plan is for the son, daughter, or helper who wants to assist from their own phone.</p>
         <div class="cards">
             <div class="card">
                 <span class="price">For the person taking medication · Free, always</span>
@@ -66,15 +115,15 @@
     </div>
 </section>
 
-<section style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+<section class="privacy-callout">
     <div class="inner">
         <h2>Private by architecture.</h2>
         <p class="lede">There is no Nestdose server. Everything lives in your iCloud private database. Family sharing uses Apple's CKShare — direct device to device. Medication names never go to analytics. No third-party trackers see what you take.</p>
-        <p style="font-size:15px;color:var(--ink-mute);"><a href="/privacy/">Read the privacy policy →</a></p>
+        <p class="link-row"><a href="/privacy/">Read the privacy policy →</a></p>
     </div>
 </section>
 
-<section>
+<section class="disclaimer">
     <div class="inner">
         <h2>What Nestdose does not do.</h2>
         <p class="lede">Nestdose is a reminder and record-keeper. It does not recommend doses, suggest schedules, check drug interactions, or offer any kind of medical advice. Those decisions belong to the people you've already chosen to trust: your prescriber and your pharmacist.</p>
