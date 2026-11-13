@@ -23,6 +23,24 @@
     to = "/terms/"
     status = 301
 
+# Comparison pages — same no-trailing-slash normalisation as above so
+# the URL in Google / an AI assistant citation / a shared link always
+# resolves without a 301 round-trip.
+[[redirects]]
+    from = "/vs-medisafe"
+    to = "/vs-medisafe/"
+    status = 301
+
+[[redirects]]
+    from = "/vs-tom"
+    to = "/vs-tom/"
+    status = 301
+
+[[redirects]]
+    from = "/vs-round-health"
+    to = "/vs-round-health/"
+    status = 301
+
 # Hard 404 → the custom 404 page (Netlify picks it up automatically but
 # naming it explicitly here is clearer).
 [[redirects]]

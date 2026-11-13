@@ -1,0 +1,27 @@
+# Comparison pages and the home page are intentionally public and
+# AI-citable — no gates, no login walls. The caregiver subdomain
+# (caregiver.nestdose.com) carries auth-gated UI that isn't on this
+# domain anyway.
+
+User-agent: *
+Allow: /
+
+# OpenAI / Anthropic / Perplexity / Google-Extended all respect the
+# same robots rules. Explicitly allow so there is no ambiguity about
+# whether the comparison pages can be cited.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://nestdose.com/sitemap.xml
